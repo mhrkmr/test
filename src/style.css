@@ -2,15 +2,17 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  height: 100%;
+  width: 100%;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
-  font-synthesis: none;
+  /* font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 a {
@@ -24,21 +26,18 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  min-width: 100vw;
-  min-height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #707070;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-#app {
+.main_body {
+  min-width: 100%;
+  min-height: 100%;
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 0;
   padding: 2rem;
-  text-align: center;
+  display: grid;
 }
 
 .logo {
@@ -54,13 +53,6 @@ h1 {
   filter: drop-shadow(0 0 2em #f7df1eaa);
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
 
 button {
   border-radius: 8px;
@@ -92,4 +84,30 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.sidebar {
+    display:block;
+    text-align: center;
+    width: 30%;
+    height: 100%;
+}
+
+.grid {
+
+}
+
+.head1 {
+  height: 10%;
+
+}
+
+.part {
+
+}
+
+.mid {}
+
+.bottom_nav {
+
 }
