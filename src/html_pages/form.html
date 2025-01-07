@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/src/javascript.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form: Only HTML</title>
+  </head>
+
+  <body bgcolor="#ffffdd" topmargin="5%" translate="yes">
+    <header draggable="true">
+      <h1>Form Title</h1>
+    </header>
+
+    <form action="/index.html" method="post">
+      <fieldset>
+        <legend>PII</legend>
+
+        <label for="name">Name (4 to 32 characters):</label>
+        <input id="name" type="text" accesskey="f" tabindex="1" placeholder="First Name" minlength="4" maxlength="32"
+          required="true" />
+        <input type="text" tabindex="2" placeholder="Last Name" minlength="4" maxlength="32" />
+        <br />
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" tabindex="3" required="true">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="others">Others</option>
+        </select>
+        <label for="dob">Enter your Date of Birth:</label>
+        <input type="date" name="dob" id="dob">
+
+      </fieldset>
+      <br />
+      <label for="long-text">Tell us about yourself:</label> <br />
+      <textarea tabindex="4" name="long-text" rows="10" cols="55" maxlength="500" placeholder="Hello, I am..."
+        required="true"></textarea>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <form action="/index.html">
+      <button type="submit">Back</button>
+    </form>
+  </body>
+
+</html>

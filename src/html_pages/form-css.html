@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/src/javascript.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form: HTML+CSS</title>
+    <link rel="stylesheet" href="/src/html_pages/page_styles/form.css" />
+  </head>
+  <body class="main">
+    
+    <div class="sides"></div>
+
+    <div class="body">
+    <div class="top">
+      <header class="header">
+        <h1 class="title">Sample Info Form</h1>
+      </header>
+    </div>
+
+    <div class="mid">
+      <form class="form" action="/index.html" id="form_main" method="post">
+
+        <fieldset class="fields">
+          <legend class="field-def">PII</legend>
+
+          <label class="form-label" id="name-label" for="name">Name:
+            <div class="hover-text" id="name-hover">First Name is required</div>
+          </label>
+
+          <div class="name">
+            <input class="text-input" id="name" type="text" accesskey="f" tabindex="1"
+              placeholder="First Name" minlength="3" maxlength="32" required="true" autocomplete="off"/>
+          </div>
+
+          <div class="last_name">
+            <input class="text-input" type="text" tabindex="2" placeholder="Last Name" minlength="0"
+              maxlength="32" />
+          </div>
+
+          <div class="gender-div">
+            <label class="form-label" id="gender-label" for="gender">Gender:</label>
+          </div>
+
+          <div class="gender">
+          <select class="dropdown-menu" id="gender" name="gender" tabindex="3" required="true">
+            <option class="dropdown" value="male">Male</option>
+            <option class="dropdown" value="female">Female</option>
+            <option class="dropdown" value="others">Others</option>
+          </select>
+          </div>
+
+          <div class="dob-div">
+            <label class="form-label" for="dob">Date of Birth:</label>
+          </div>
+          <div class="dob">
+            <input class="date-input" tabindex="4" type="date" name="dob" id="dob">
+          </div>
+        </fieldset>
+
+        <label class="form-label" for="long-text">Tell us about yourself:</label> <br />
+        <input type="text" class="textarea-input" tabindex="5" name="long-text" maxlength="500"
+          placeholder="Hello, I am..." required="true"></textarea>
+      </form>
+    </div>
+
+    <div class="bottom">
+      <form class="nav-form-button" action="/index.html">
+        <button class="nav-button-left buttons" type="submit">Back</button>
+        <button class="form-button buttons" type="submit" form="form_main">Submit</button>
+      </form>
+    </div>
+    </div>
+
+    <div class="sides"></div>
+  </body>
+</html>
